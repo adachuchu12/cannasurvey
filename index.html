@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - FCC Survey Page Project - HTML/CSS</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Cannabis in Canada Survey Form</h1>
+    <p id="description" class="description text-center">Take 5 minutes to answer some consumer related questions to win a smell-proof & smell-proof cannabis travel kit by Bluntly Co!</p>
+  </header>
+
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+    </div>
+
+    <div class="form-group">
+      <label id="email-label" for="email">What is your email? </label>
+
+      <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+    </div>
+
+    <div class="form-group">
+      <label id="age" for="number">Are you legal? <span class="legal" (required) </span>
+      </label>
+
+      <div>
+        <input type="checkbox" name="yes" id="age">
+        <label for="age">Yes</label>
+      </div>
+    </div>
+
+    <div>
+      <input type="checkbox" name="no" id="age">
+      <label for="age">No</label>
+    </div>
+
+    <div class="form-group">
+      <label id="history" for="history">Have you ever consumed cannabis before?</label>
+      <div>
+        <input type="checkbox" name="yes" id="history">
+        <label for="history">Yes</label>
+      </div>
+      <div>
+        <input type="checkbox" name="no" id="history">
+        <label for="history">No</label>
+      </div>
+
+      <div class="form-group">
+        <p>If yes, please describe how often you consume cannabis:</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Choose one that best describe you</option>
+          <option value="once">Once in my life</option>
+          <option value="fewtimes">A few times here and there</option>
+          <option value="weekends">Weekend warrior(Only on weekends)</option>
+          <option value="fewweek">A few times a week but who's counting?</option>
+          <option value="stoner">Certified stoner - 420 Everyday!</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label id="recommend" for="recommend">Would you recommend using cannabis to a friend? </label>
+        <div>
+          <input type="checkbox" name="yes" id="recommend">
+          <label for="recommend">Definitely! </label>
+        </div>
+        <div>
+          <input type="checkbox" name="maybe" id="recommend">
+          <label for="recommened">Maybe</label>
+        </div>
+        <div>
+          <input type="checkbox" name="no" id="recommend">
+          <label for="recommend">No way!</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <p>What is your favourite method to smoke/inhale cannabis?</p>
+        <select id="dropsmoke" name="methods" class="form-control">
+          <option disabled selected value>Choose one that best describe you</option>
+          <option value="joint">Joints</option>
+          <option value="vapes">Vape/Pens</option>
+          <option value="shatter">Shatter with a Rig</option>
+          <option value="bowls">Bowls</option>
+          <option value="stoner">Bongs</option>
+          <option value="nothing">Nothing - I do not smoke cannabis</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>What is your favourite method to ingest cannabis?</p>
+        <select id="ingest" name="methods" class="form-control">
+          <option disabled selected value>Choose one that best describe you</option>
+          <option value="candies">Candies/Gummies</option>
+          <option value="drinks">Teas/Drinks</option>
+          <option value="pills">Pills/Capsules</option>
+          <option value="bowls">Bowls</option>
+          <option value="stoner">Bongs</option>
+          <option value="nothing">Nothing - I do not smoke cannabis</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label id="newways" for="newways">Would you be open to trying new methods to consume cannabis? If yes, which methods? (Check all that apply)</label>
+        <div>
+          <input type="checkbox" name="no" id="newways">
+          <label for="newways">No - I am good with how I consume cannabis </label>
+        </div>
+        <div>
+          <input type="checkbox" name="yes" id="newways">
+          <label for="newways">Yes - I am open to try ingesting cannabis</label>
+        </div>
+        <div>
+          <input type="checkbox" name="yes" id="newways">
+          <label for="newways">Yes - I am open to try smoking cannabis</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label id="safer" for="safer"> Would you be more inclined to use cannabis if there were better ways to keep cannabis smell-free and safe from children within your home?</label>
+        <div>
+          <input type="checkbox" name="no" id="safer">
+          <label for="newways">No</label>
+        </div>
+        <div>
+          <input type="checkbox" name="yes" id="safer">
+          <label for="newways">Yes</label>
+        </div>
+      </div>
+
+      <div class="reason-form">
+        <label id="reason" for="reason">Why do you consume cannabis? (Check all that apply)</label>
+        <input type="checkbox" name="relax" id="reason">
+        <label for="reason">For relaxation</label>
+      </div>
+      <div>
+        <input type="checkbox" name="creative" id="reason">
+        <label for="reason">For creativity</label>
+      </div>
+      <div>
+        <input type="checkbox" name="sleep" id="reason">
+        <label for="reason">For sleep/rest </label>
+      </div>
+      <div>
+        <input type="checkbox" name="social" id="reason">
+        <label for="reason">To socialize</label>
+      </div>
+      <div>
+        <input type="checkbox" name="health" id="reason">
+        <label for="reason">For health (Medical condition)</label>
+      </div>
+      <div>
+        <input type="checkbox" name="pain" id="reason">
+        <label for="reason">For pain management</label>
+      </div>
+      <div>
+        <input type="checkbox" name="appetite" id="reason">
+        <label for="reason">To gain/increase appetite</label>
+      </div>
+      <div>
+        <input type="checkbox" name="mental" id="reason">
+        <label for="reason">To help with mental health</label>
+      </div>
+      <div>
+        <input type="checkbox" name="sex" id="reason">
+        <label for="reason">For sexual pleasure</label>
+      </div>
+
+      <div>
+        <div class="form-group">
+          <p>What concerns you about cannabis? (Select one that is the most applicable to you)</p>
+          <select id="concern" name="concern" class="form-control">
+            <option disabled selected value>Choose one that best describe you</option>
+            <option value="memory">Block of memory (preventing new short-term memory to form)</option>
+            <option value="lazy">Feeling drowsy and unproductive the next day after using cannabis</option>
+            <option value="panic">Could lead to panic and more anxiety if not used properly</option>
+            <option value="psychosis">Could potentially lead to psychosis for young adults with risks of schizophrenia</option>
+            <option value="disease">Inhaling smoke can cause respiratory diseases</option>
+            <option value="nothing">Nothing - I do not have any concerns about cannabis consumption</option>
+          </select>
+        </div>
+   
+    <div>
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+      </div>
+      </form>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
